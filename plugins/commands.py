@@ -23,12 +23,12 @@ async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [
             [
-                InlineKeyboardButton('🔔 Updates 🤖', url='https://t.me/LazyDeveloper')
+                InlineKeyboardButton('🔔 Updates 🤖', url='https://t.me/asb_bot_official')
             ],
             [
-                InlineKeyboardButton('🙆🏻 Help 🦾', url=f"https://t.me/{temp.U_NAME}?start=help"),
+                InlineKeyboardButton('🙆🏻 Help 🆘', url=f"https://t.me/{temp.U_NAME}?start=help"),
             ],[
-            InlineKeyboardButton('Watch Tutorial', url='https://youtube.com/LazyDeveloper')
+            InlineKeyboardButton('Watch Tutorial', url='https://t.me/asb_bot_official/56')
             ],
             [
                 InlineKeyboardButton(text=DOWNLOAD_TEXT_NAME,url=DOWNLOAD_TEXT_URL)
@@ -49,13 +49,13 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('➕↖️ Add Me To Your Groups ↗️➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('🧞‍♀️ Search 🧐', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🔔 Updates 🤖', url='https://t.me/LazyDeveloper')
+            InlineKeyboardButton('🔎 Search 🔍', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('🔔 Updates 🤖', url='https://t.me/asb_bot_official')
             ],[
-            InlineKeyboardButton('🙆🏻 Help 🦾', callback_data='help'),
+            InlineKeyboardButton('🙆🏻 Help 🆘', callback_data='help'),
             InlineKeyboardButton('♥️ About ♥️', callback_data='about')
             ],[
-            InlineKeyboardButton('Watch Tutorial', url='https://youtube.com/LazyDeveloper')
+            InlineKeyboardButton('Watch Tutorial', url='https://t.me/asb_bot_official/56')
             ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -79,7 +79,7 @@ async def start(client, message):
             ],
              [
                 InlineKeyboardButton(
-                    "🦋 SUBSCRIBE YT Channel 🦋", url='https://youtube.com/@LazyDeveloperr'
+                    "🦋 SUBSCRIBE YT Channel 🦋", url='https://youtube.com/@ANIMALTHINGS01'
                 )
             ]
         ]
@@ -102,13 +102,13 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('➕↖️ Add Me To Your Groups ↗️➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('🧞‍♀️ Search 🧐', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🔔 Updates 🤖', url='https://t.me/LazyDeveloper')
+            InlineKeyboardButton('🔎 Search 🔍', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('🔔 Updates 🤖', url='https://t.me/asb_bot_official')
             ],[
-            InlineKeyboardButton('🙆🏻 Help 🦾', callback_data='help'),
+            InlineKeyboardButton('🙆🏻 Help 🆘', callback_data='help'),
             InlineKeyboardButton('♥️ About ♥️', callback_data='about')
         ],[
-            InlineKeyboardButton('Watch Tutorial', url='https://youtube.com/LazyDeveloper')
+            InlineKeyboardButton('Watch Tutorial', url='https://t.me/asb_bot_official/56')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -374,7 +374,7 @@ async def delete_all_index(bot, message):
 @Client.on_callback_query(filters.regex(r'^autofilter_delete'))
 async def delete_all_index_confirm(bot, message):
     await Media.collection.drop()
-    await message.answer('♥️ Thank You LazyDeveloper ♥️')
+    await message.answer('♥️ Thank You Asb ♥️')
     await message.message.edit('Succesfully Deleted All The Indexed Files.')
 
 
